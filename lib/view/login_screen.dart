@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_evento_app/view/signup_screen.dart';
 
+import 'event_screen.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -83,5 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  void _login(BuildContext context) {}
+  void _login(BuildContext context) {
+    Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => EventScreen()));
+  }
 }
